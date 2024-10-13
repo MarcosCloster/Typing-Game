@@ -1,5 +1,5 @@
 span {
-    font-size: 100px;
+    font-size: 2rem;
 }
 
 .correct {
@@ -33,4 +33,66 @@ span {
         opacity: 0%;
         font-size: calc(100px / 2);
     }
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: #19323C;
+}
+
+button{
+    position: relative;
+    border: none;
+    height: 50px;
+    width: 200px;
+    font-size: 22px;
+    transition: .3s linear;
+    cursor: pointer;
+}
+
+.startButton:hover{
+    background-color: #A93F55;
+    box-shadow: 0 0 5px #A93F55, 0 0 25px #A93F55, 0 0 50px #A93F55, 0 0 100px #A93F55, 0 0 300px #A93F55;
+
+}
+
+/* Eliminar bordes */
+.card {
+    border: none;
+    box-shadow: none;
+    background: none;
+    color: white;
+}
+
+/* Centrar el texto y hacerlo ocupar todo el ancho */
+#divInfo {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem; /* Aumentar tamaño del texto si lo deseas */
+}
+
+/* Mantener el input en una posición fija */
+#inputQuery {
+    position: fixed;
+    bottom: 50px; /* Ajusta esto para colocar el input donde quieras */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px; /* Ajusta el tamaño del input */
+}
+
+/* Ocultar el borde del input */
+#inputQuery {
+    border: none;
+    border-bottom: 2px solid lightblue; /* Si quieres agregar un borde inferior */
+    outline: none;
+}
+
+#statsCard p {
+    margin: 10px 0; /* Agregar margen superior e inferior */
+}
+
+#restartButton{
+    margin-top: 2rem;
 }
